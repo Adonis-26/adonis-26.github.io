@@ -1,0 +1,191 @@
+header {
+   margin-bottom: 5px;
+
+   img {
+      display: flex;
+   }
+
+}
+
+.affiche-restaurant {
+   @include center;
+}
+
+.bloc-cards-menus {
+   @include center;
+}
+
+
+.section-btn {
+   display: flex;
+   justify-content: center;
+
+}
+
+.bloc-cards-menus-a-la-francaise {
+   @include center;
+
+   .cards-menus {
+      height: 1414px;
+
+      .section-btn-fr {
+         display: flex;
+         justify-content: center;
+         margin-top: 5px;
+      }
+   }
+}
+
+.heart {
+   margin-top: 29px;
+   margin-left: 10px;
+
+   i {
+      position: absolute;
+      font-size: 30px;
+   }
+
+   .fa-solid {
+      opacity: 0;
+      cursor: pointer;
+      animation: infinite;
+   }
+
+   .fa-solid:active {
+      opacity: 1;
+      color: transparent;
+      background-clip: text;
+      background-image: linear-gradient(#9356DC, #ff79DA);
+
+   }
+}
+
+
+//============== Media queries ===============
+
+@media (min-width: 1024px) {
+
+   header {
+      margin-bottom: 15px;
+      position: relative;
+   }
+
+   .affiche-restaurant {
+      .affiche {
+         box-sizing: content-box;
+         width: 100%;
+      }
+
+      img {
+         object-fit: cover;
+         width: 100%;
+         height: 480px;
+
+      }
+   }
+
+   .bloc-cards-menus-a-la-francaise {
+      @include center;
+
+      .cards-menus {
+         height: 1378px;
+
+      }
+   }
+
+   .cards-menus {
+      width: 75%;
+      top: 520px;
+      height: 1305px;
+
+      .resto {
+         @include center;
+      }
+
+      .bloc-entrees {
+         @include center;
+      }
+
+      .bloc-entrance {
+         background: #ffffff;
+         width: 651px;
+         height: 72px;
+      }
+
+      .accompagnement-entrance {
+         width: 641px;
+      }
+
+
+      .bloc-plats {
+         display: flex;
+         justify-content: center;
+
+      }
+
+      .bloc-desserts {
+         display: flex;
+         justify-content: center;
+      }
+
+      .section-btn {
+         display: flex;
+         justify-content: center;
+         margin-top: 10px;
+      }
+
+      .section-btn-fr {
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+
+   .footer {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+
+      .align-left {
+         display: flex;
+         flex-direction: row-reverse;
+         align-items: flex-end;
+         margin-top: 50px;
+
+         .h3-footer {
+            margin: 0 50px 0 60px;
+            width: 44px;
+            height: 4px;
+
+         }
+
+         .p-footer {
+            display: flex;
+
+
+            .propos {
+               display: flex;
+               flex-direction: row;
+               margin: 0;
+
+               p {
+                  margin: 0 0 0 10px;
+                  height: 0;
+
+               }
+            }
+
+            .mentions {
+               display: flex;
+               flex-direction: row;
+               margin-left: 40px;
+
+               p {
+                  margin: 0 0 0 20px;
+                  height: 0;
+               }
+            }
+         }
+      }
+   }
+}
