@@ -1,0 +1,217 @@
+header {
+   @include header;
+   @include center;
+}
+
+.bloc-reserve {
+   background: $gris;
+
+}
+
+.reserve {
+   @include center;
+
+}
+
+.decouvrez {
+   @include center;
+
+}
+
+.div-btn {
+   @include center;
+
+}
+
+
+.bloc-fonctionnement {
+   @include center;
+   @include h2;
+}
+
+
+
+
+.bloc-restaurants {
+   @include center;
+   @include h2;
+
+   .card-new {
+      background: $tertiaire;
+
+      p {
+         color: $vert;
+      }
+   }
+
+   .restaurant {
+      @include restaurant;
+   }
+
+   .plats {
+      @include plat;
+
+   }
+
+   .valid {
+      position: absolute;
+      opacity: 0;
+   }
+
+   .valid:hover {
+      opacity: 1;
+
+   }
+}
+
+.heart {
+   margin-top: 29px;
+   margin-left: 10px;
+
+   i {
+      position: absolute;
+      font-size: 30px;
+   }
+
+   .fa-solid {
+      opacity: 0;
+      cursor: pointer;
+      animation: infinite;
+   }
+
+   .fa-solid:active {
+      opacity: 1;
+      color: transparent;
+      background-clip: text;
+      background-image: linear-gradient(#9356DC, #ff79DA);
+
+   }
+}
+
+footer {
+   margin-top: auto;
+   @include center;
+}
+
+//============== Media queries ===============
+
+@media (min-width: 1024px) {
+
+   .bloc-reserve {
+      //bloc reserve
+      height: 200px;
+   }
+
+   .reserve {
+      p {
+         width: 58%;
+         font-size: 30px;
+      }
+   }
+
+   .decouvrez {
+      p {
+         width: 58%;
+         font-size: 14px;
+
+      }
+   }
+
+   .bloc-fonctionnement {
+      //bloc fonctionnement
+      flex-direction: row;
+      height: 135px;
+
+      .fonctions {
+         display: flex;
+         gap: 30px;
+
+         div {
+            height: 40px;
+         }
+
+      }
+   }
+
+   .bloc-restaurants {
+      height: 730px;
+
+      .resto-card-food {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .rang-resto {
+         display: flex;
+         gap: 80px;
+         width: 100%;
+
+         .card-food {
+            height: 279px;
+            width: 500px;
+            margin-bottom: 40px;
+
+            .img-and-food {
+               img {
+                  height: 200px;
+               }
+            }
+
+            .restaurant {
+               width: 470px;
+            }
+         }
+      }
+
+   }
+
+   .footer-home {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      margin: auto;
+
+      .align-left {
+         display: flex;
+         flex-direction: row-reverse;
+         align-items: flex-end;
+         margin-top: 50px;
+
+         .h3-footer {
+            margin: 0 50px 0 60px;
+            width: 44px;
+            height: 4px;
+
+         }
+
+         .p-footer {
+            display: flex;
+
+
+            .propos {
+               display: flex;
+               flex-direction: row;
+               margin: 0;
+
+               p {
+                  margin: 0 0 0 10px;
+                  height: 0;
+
+               }
+
+            }
+
+            .mentions {
+               display: flex;
+               flex-direction: row;
+               margin-left: 40px;
+
+               p {
+                  margin: 0 0 0 20px;
+                  height: 0;
+               }
+            }
+         }
+      }
+   }
+}
