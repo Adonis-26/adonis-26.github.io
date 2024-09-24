@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Shrikhand";
-  src: url("/assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
   font-style: italic;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
   font-style: normal;
 }
 .btn {
@@ -354,6 +354,8 @@ input:checked ~ .empty-heart {
   line-height: 17.63px;
 }
 .bloc-entrance .accompagnement-entrance p {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .bloc-entrance .accompagnement-entrance .price {

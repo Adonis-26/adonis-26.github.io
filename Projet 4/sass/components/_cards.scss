@@ -389,7 +389,8 @@ input:checked~.empty-heart {
         line-height: 17.63px;
 
         p {
-        
+            white-space: nowrap; // ne pas aller à la ligne 
+            overflow: hidden; //cacher le reste de texte
             text-overflow: ellipsis; //les points de suspensions
         }
 
