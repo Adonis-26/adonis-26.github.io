@@ -110,6 +110,27 @@ header {
          background: #ffffff;
          width: 651px;
          height: 72px;
+          /* Animation déclenchée lorsque le checkbox est coché */
+   input[type="checkbox"]:checked~.valid {
+      animation: slid-left 0.5s forwards;
+      /* Glissement vers la gauche */
+   }
+
+   input[type="checkbox"]:checked ~ .plat .accompagnement-entrance {
+      width: 585px; /* Modification de la largeur */
+      transition: width 0.5s ease; /* Transition fluide pour la largeur */
+    }
+
+   /* Animation déclenchée lorsque le checkbox est décoché */
+   input[type="checkbox"]:not(:checked) ~ .valid {
+      animation: slid-right 0.5s forwards;
+      /* Glissement vers la droite */
+   } 
+
+   input[type="checkbox"]:not(:checked) ~ .plat .accompagnement-entrance {
+      width: 641px;
+      transition: width 0.5s ease; /* Position initiale de la largeur */
+    }
       }
 
       .accompagnement-entrance {

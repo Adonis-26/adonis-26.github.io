@@ -1,199 +1,239 @@
 //================Animation loading & ball ==========================
-@keyframes loading{ //animation loading
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-        display: none;
-    }
-   
-}
-.animation{
-    display: flex;
-    margin-bottom: 5px;
-    justify-content: center;
-    animation: 1.2s linear;
-}
-.ball{
-    display: flex;
-    justify-content: center;
-    height: 20px;
-    width: 20px;
-    border-radius:50%;
-    background-image: linear-gradient(to top,#9356DC,#db5bb7);
-    animation: bounce 1s infinite;
+@keyframes loading {
+
+   //animation loading
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+      display: none;
+   }
+
 }
 
-.ball:not(:last-child){ // tous les balles sauf la dernière
-    margin-right: 10px;
+.animation {
+   display: flex;
+   margin-bottom: 5px;
+   justify-content: center;
+   animation: 1.2s linear;
 }
 
-.ball:nth-child(2){
-    animation-delay: 0.1s;
-}
-.ball:nth-child(3){
-    animation-delay: 0.2s;
+.ball {
+   display: flex;
+   justify-content: center;
+   height: 20px;
+   width: 20px;
+   border-radius: 50%;
+   background-image: linear-gradient(to top, #9356DC, #db5bb7);
+   animation: bounce 1s infinite;
 }
 
-.text{
-    font-size: 25px;
+.ball:not(:last-child) {
+   // tous les balles sauf la dernière
+   margin-right: 10px;
 }
-@keyframes bounce{// animation ball
-    0%{
-        transform: translateY(-100%);
-    }
-    50%{
-        transform: translateY(0%);
-    }
-    100%{
-        transform: translateY(-100%);
-    }
+
+.ball:nth-child(2) {
+   animation-delay: 0.1s;
 }
+
+.ball:nth-child(3) {
+   animation-delay: 0.2s;
+}
+
+.text {
+   font-size: 25px;
+}
+
+@keyframes bounce {
+
+   // animation ball
+   0% {
+      transform: translateY(-100%);
+   }
+
+   50% {
+      transform: translateY(0%);
+   }
+
+   100% {
+      transform: translateY(-100%);
+   }
+}
+
 //================ Amimation menu décalage bloc entrees==============
 .bloc-entrees {
-    .bloc-entrance {
-       opacity: 0;
-       transform: translateY(20px);
-       animation: decalage-entrees 200ms forwards; // L'animation se termine avec 'forwards' pour rester à la fin
-    }
- }
- 
- // Appliquer le délai en cascade 
- .bloc-entrance:nth-child(1) {
-    animation-delay: 0s;
- }
- 
- .bloc-entrance:nth-child(2) {
-    animation-delay: 0.5s; // Chaque élément se déclenche après 0.5s
- }
- 
- .bloc-entrance:nth-child(3) {
-    animation-delay: 1s;
- }
- 
- .bloc-entrance:nth-child(4) {
-    animation-delay: 1.5s;
- }
- 
- @keyframes decalage-entrees {
-    0% {
-       opacity: 0;
-       transform: translateY(20px);
-    }
- 
-    100% {
-       opacity: 1;
-       transform: translateY(0);
-    }
- }
- 
- 
- //================ Amimation menu décalage bloc plats==============
- 
- .bloc-plats {
-    .bloc-entrance {
-       opacity: 0;
-       transform: translateY(20px);
-       animation: decalage-plat 200ms forwards; // L'animation se termine avec 'forwards' pour rester à la fin
-    }
- 
- 
- 
-    .bloc-entrance:nth-child(1) {
-       animation-delay: 2s;
-    }
- 
-    .bloc-entrance:nth-child(2) {
-       animation-delay: 2.5s; // Chaque élément se déclenche après 0.5s
-    }
- 
-    .bloc-entrance:nth-child(3) {
-       animation-delay: 3s;
-    }
- }
- 
- @keyframes decalage-plat {
-    0% {
-       opacity: 0;
-       transform: translateY(20px);
-    }
- 
-    100% {
-       opacity: 1;
-       transform: translateY(0);
-    }
- }
- 
- //================ Amimation menu décalage bloc desserts==============
- .bloc-desserts {
-    .bloc-entrance {
-       opacity: 0;
-       transform: translateY(20px);
-       animation: decalage-dessert 200ms forwards; // L'animation se termine avec 'forwards' pour rester à la fin 
-    }
- 
-    .bloc-entrance:nth-child(1) {
-       animation-delay: 3.5s;
-    }
- 
-    .bloc-entrance:nth-child(2) {
-       animation-delay: 4s; // Chaque élément se déclenche après 0.5s
-    }
- 
-    .bloc-entrance:nth-child(3) {
-       animation-delay: 4.5s;
-    }
- 
-    .bloc-entrance:nth-child(4) {
-       animation-delay: 4.5s;
-    }
- }
- 
- 
- //Keyframes pour l'animation en cascade dessert
- @keyframes decalage-dessert {
-    0% {
-       opacity: 0;
-       transform: translateY(-20px);
-    }
- 
-    100% {
-       opacity: 1;
-       transform: translateY(0);
-    }
- }
- //============================= animation sélection de plats ==================
- 
-.bloc-entrance{
-    position: relative;
-    overflow: hidden; //caché l'encoche
-        // Cacher le checkbox par défaut
-  input[type="checkbox"] {
-    display: none;
-  }
-    
-// Animation déclenchée lorsque le checkbox est coché
-    input[type="checkbox"]:checked ~ .plat &.valid {
-    animation: slid-left 0.5s forwards; // Applique l'animation
-  }
-    .valid-switch{ // le check
-        position: absolute;
-        width: 357px;
-        height: 80px;
-        border-radius: 15px;
-        cursor: pointer;
-        
-    }
-    @keyframes slid-left {
-        0% {
-        transform: translateX(0%); // Position initiale
-        }
-        100% {
-        transform: translateX(-100%); // Glisse vers la gauche
-        }
-    }
+   .bloc-entrance {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: decalage-entrees 200ms forwards; // L'animation se termine avec 'forwards' pour rester à la fin
+   }
 }
 
-  
- 
+// Appliquer le délai en cascade 
+.bloc-entrance:nth-child(1) {
+   animation-delay: 0s;
+}
+
+.bloc-entrance:nth-child(2) {
+   animation-delay: 0.5s; // Chaque élément se déclenche après 0.5s
+}
+
+.bloc-entrance:nth-child(3) {
+   animation-delay: 1s;
+}
+
+.bloc-entrance:nth-child(4) {
+   animation-delay: 1.5s;
+}
+
+@keyframes decalage-entrees {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+
+//================ Amimation menu décalage bloc plats==============
+
+.bloc-plats {
+   .bloc-entrance {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: decalage-plat 200ms forwards; // L'animation se termine avec 'forwards' pour rester à la fin
+   }
+
+
+
+   .bloc-entrance:nth-child(1) {
+      animation-delay: 2s;
+   }
+
+   .bloc-entrance:nth-child(2) {
+      animation-delay: 2.5s; // Chaque élément se déclenche après 0.5s
+   }
+
+   .bloc-entrance:nth-child(3) {
+      animation-delay: 3s;
+   }
+}
+
+@keyframes decalage-plat {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+//================ Amimation menu décalage bloc desserts==============
+.bloc-desserts {
+   .bloc-entrance {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: decalage-dessert 200ms forwards; // L'animation se termine avec 'forwards' pour rester à la fin 
+   }
+
+   .bloc-entrance:nth-child(1) {
+      animation-delay: 3.5s;
+   }
+
+   .bloc-entrance:nth-child(2) {
+      animation-delay: 4s; // Chaque élément se déclenche après 0.5s
+   }
+
+   .bloc-entrance:nth-child(3) {
+      animation-delay: 4.5s;
+   }
+
+   .bloc-entrance:nth-child(4) {
+      animation-delay: 4.5s;
+   }
+}
+
+
+//Keyframes pour l'animation en cascade dessert
+@keyframes decalage-dessert {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+//============================= animation sélection de plats ==================
+
+.bloc-entrance {
+   position: relative;
+   overflow: hidden; //caché l'encoche   
+
+   // Cacher le checkbox par défaut
+   input[type="checkbox"] {
+      display: none;
+   }
+
+   // Quand on clique sur .plat, cela coche le checkbox 
+   .plat {
+      cursor: pointer;
+   }
+
+   /* Animation déclenchée lorsque le checkbox est coché */
+   input[type="checkbox"]:checked~.valid {
+      animation: slid-left 0.5s forwards;
+      /* Glissement vers la gauche */
+   }
+
+   input[type="checkbox"]:checked ~ .plat .accompagnement-entrance {
+      width: 291px; /* Modification de la largeur */
+      transition: width 0.5s ease; /* Transition fluide pour la largeur */
+    }
+
+   /* Animation déclenchée lorsque le checkbox est décoché */
+   input[type="checkbox"]:not(:checked) ~ .valid {
+      animation: slid-right 0.5s forwards;
+      /* Glissement vers la droite */
+   } 
+
+   input[type="checkbox"]:not(:checked) ~ .plat .accompagnement-entrance {
+      width: 347px;
+      transition: width 0.5s ease; /* Position initiale de la largeur */
+    }
+
+   /* Animation de glissement vers la gauche */
+   // @keyframes slid-left {
+   //    0% {
+   //       transform: translateX(0px);
+   //    }
+
+   //    100% {
+   //       transform: translateX(-55px);
+   //    }
+   // }
+
+   // /* Animation de glissement vers la droite (retour à la position initiale) */
+   // @keyframes slid-right {
+   //    0% {
+   //       transform: translateX(-0%);
+   //    }
+
+   //    100% {
+   //       transform: translateX(0%);
+   //    }
+   // }
+}
