@@ -1,0 +1,36 @@
+@font-face {
+   font-family: "Shrikhand";
+   // src: url('/assets/fonts/Shrikhand/Shrikhand-Regular.ttf');
+   src: url('../assets/fonts/Shrikhand/Shrikhand-Regular.ttf');
+   font-style: italic;
+}
+
+@font-face {
+   font-family: "Roboto";
+   src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+   font-style: normal;
+}
+
+@import'../sass/components/buttons';
+@import'../sass/components/cards';
+@import'../sass/components/colors';
+@import'../sass/components/header-footer';
+@import'../sass/components/var-mixins';
+@import'../sass/pages/homepage';
+@import'../sass/pages/menu';
+@import'../sass/components/animation';
+
+h1{
+   font-family: "Shrikhand";
+}
+
+
+body{
+   max-width: 100%;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   opacity: 1;
+}
+
+
