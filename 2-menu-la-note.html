@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a class="arrow" href="index.html">
+            <img src="assets/icons/arrow-left-solid.svg" alt="arrow">
+        </a>
+        <h1>ohmyfood</h1>
+    </header>
+
+    <div class="affiche-restaurant">
+        <div class="affiche">
+            <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la palette">
+        </div>
+    </div>
+    <div class="bloc-cards-menus">
+        <div class="cards-menus">
+            <div class="resto">
+                <p>La note enchantée</p>
+                <label class="heart-switch heart-page-menu">
+                    <input type="checkbox">
+                    <i class="far fa-heart empty-heart"></i> <!-- Coeur vide -->
+                    <i class="fas fa-heart full-heart"></i> <!-- Coeur plein -->
+                </label>
+            </div>
+            <!--bloc ENTREES-->
+            <div class="bloc-entrees">
+                <div>
+                    <div class="bloc-details">
+                        <p>ENTRÉES</p>
+                        <div class="tiret"></div>
+                    </div>
+                    <div class="bloc-entrees-media">
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree1">
+                            <label class="plat" for="entree1">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Tartare de thon</p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>Assaisonné au yuzu</p>
+                                    <div class="price">
+                                        <p>25€</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree2">
+                            <label class="plat" for="entree2">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Bouchée de homard croustillant </p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>Et sa farandole de petits légumes</p>
+                                    <div class="price">
+                                        <p>35€</p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree3">
+                            <label class="plat" for="entree3">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Poulet rôti aux herbes de Provence </p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>Et sa crème de truffe</p>
+                                    <div class="price">
+                                        <p>20€</p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- bloc PLATS-->
+            <div class="bloc-plats">
+                <div>
+                    <div class="bloc-details">
+                        <p>PLATS</p>
+                        <div class="tiret"></div>
+                    </div>
+                    <div>
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree4">
+                            <label class="plat" for="entree4">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Poulet rôti aux herbes de Provence </p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>Et sa crème de truffe</p>
+                                    <div class="price">
+                                        <p>40€</p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree5">
+                            <label class="plat" for="entree5">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Langouste rôtie </p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>Et ses légumes de saison</p>
+                                    <div class="price">
+                                        <p>35€</p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree6">
+                            <label class="plat" for="entree6">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Côte de bœuf Angus </p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>Et sa purée de panais</p>
+                                    <div class="price">
+                                        <p>44€</p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--bloc DESSERTS-->
+            <div class="bloc-desserts">
+                <div>
+                    <div class="bloc-details">
+                        <p>DESSERTS</p>
+                        <div class="tiret"></div>
+                    </div>
+                    <div>
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree7">
+                            <label class="plat" for="entree7">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Farandole de desserts</p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>Du chef</p>
+                                    <div class="price">
+                                        <p>18€</p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree8">
+                            <label class="plat" for="entree8">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Crème brulée </p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>Revisitée</p>
+                                    <div class="price">
+                                        <p>22€</p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloc-entrance">
+                            <input type="checkbox" id="entree9">
+                            <label class="plat" for="entree9">
+                                <div class="plat-entrance">
+                                    <p class="pat-entrance-détails">Tiramisu</p>
+                                </div>
+                                <div class="accompagnement-entrance">
+                                    <p>À la noisette</p>
+                                    <div class="price">
+                                        <p>23€</p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="valid">
+                                <div class="coche">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="section-btn">
+                <button class="btn">
+                    Commander
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <section class="align-left">
+            <h3 class="h3-footer">ohmyfood</h3>
+            <div class="p-footer">
+                <div class="propos">
+                    <p>
+                        <img src="assets/icons/utensils-solid.svg" alt="utensils-solid">
+                        Proposer un restaurant
+                    </p>
+                    <p>
+                        <img src="assets/icons/handshake-angle-solid.svg" alt="handshake-angle-solid">
+                        Devenir partenaire
+                    </p>
+                </div>
+                <div class="mentions">
+                    <p>Mentions légales</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
