@@ -390,7 +390,7 @@ input:checked~.empty-heart {
             white-space: nowrap; // ne pas aller à la ligne 
             overflow: hidden; //cacher le reste de texte
             text-overflow: ellipsis; //les points de suspensions
-            padding-bottom: 15px;
+            padding-bottom: 10px;
         }
 
         .price {
