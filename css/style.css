@@ -219,7 +219,7 @@
 
 .cards-menus {
   width: 375px;
-  height: 1241px;
+  height: 1213px;
   background: #f6f6f6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -358,14 +358,14 @@ input:checked ~ .empty-heart {
   font-family: "Roboto";
   line-height: 17.63px;
 }
-.bloc-entrance .accompagnement-entrance span {
+.bloc-entrance .accompagnement-entrance .elipse {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding-bottom: 10px;
 }
 .bloc-entrance .accompagnement-entrance .price {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .bloc-entrance .valid {
   background-color: #99e2d0;
@@ -395,7 +395,7 @@ header {
   margin-right: 80px;
 }
 header a {
-  margin-left: 70px;
+  margin-left: 100px;
 }
 header a img {
   width: 30px;

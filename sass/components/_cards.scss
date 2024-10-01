@@ -225,7 +225,7 @@
 
 .cards-menus {
     width: 375px;
-    height: 1241px;
+    height: 1213px;
     background: #f6f6f6;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -386,15 +386,15 @@ input:checked~.empty-heart {
         font-family: 'Roboto';
         line-height: 17.63px;
 
-        span {
+        .elipse{
             white-space: nowrap; // ne pas aller à la ligne 
             overflow: hidden; //cacher le reste de texte
             text-overflow: ellipsis; //les points de suspensions
             padding-bottom: 10px;
         }
 
-        .price {
-            margin-right: 10px;
+        .price{
+            margin-right: 5px;
         }
     }
 
