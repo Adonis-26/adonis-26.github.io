@@ -109,7 +109,8 @@ header {
       .bloc-entrance {
          background: #ffffff;
          width: 651px;
-         height: 72px;
+         padding-top: 10px;
+         padding-bottom:10px;
           /* Animation déclenchée lorsque le checkbox est coché */
    input[type="checkbox"]:checked~.valid {
       animation: slid-left 0.5s forwards;
