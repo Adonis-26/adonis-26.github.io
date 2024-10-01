@@ -1,13 +1,20 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Shrikhand";
-  src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
+  font-family: "Shrikhand" system-ui;
+  font-weight: 400;
+  font-style: normal;
   font-style: italic;
+  src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-family: "Roboto" system-ui;
+  font-weight: 100;
+  font-weight: 200;
+  font-weight: 300;
+  font-weight: 400;
+  font-style: italic;
   font-style: normal;
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 .btn {
   width: 186px;
@@ -212,7 +219,7 @@
 
 .cards-menus {
   width: 375px;
-  height: 1310px;
+  height: 1241px;
   background: #f6f6f6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -338,10 +345,8 @@ input:checked ~ .empty-heart {
   font-weight: 600;
   line-height: 21.09px;
   margin-left: 10px;
-  padding: 1px;
-}
-.bloc-entrance .plat-entrance p {
-  margin: 9px 0 0 0;
+  padding-top: 10px;
+  padding-bottom: 8px;
 }
 .bloc-entrance .accompagnement-entrance {
   width: 347px;
@@ -353,8 +358,11 @@ input:checked ~ .empty-heart {
   font-family: "Roboto";
   line-height: 17.63px;
 }
-.bloc-entrance .accompagnement-entrance p {
+.bloc-entrance .accompagnement-entrance span {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
+  padding-bottom: 10px;
 }
 .bloc-entrance .accompagnement-entrance .price {
   margin-right: 10px;
@@ -384,6 +392,7 @@ header {
   display: flex;
   height: 63px;
   position: relative;
+  margin-right: 80px;
 }
 header a {
   margin-left: 70px;
@@ -651,7 +660,7 @@ header img {
   justify-content: center;
 }
 .bloc-cards-menus-a-la-francaise .cards-menus {
-  height: 1414px;
+  height: 1339px;
 }
 .bloc-cards-menus-a-la-francaise .cards-menus .section-btn-fr {
   display: flex;
@@ -858,15 +867,15 @@ header img {
 }
 
 .bloc-entrance:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 200ms;
 }
 
 .bloc-entrance:nth-child(3) {
-  animation-delay: 1s;
+  animation-delay: 400ms;
 }
 
 .bloc-entrance:nth-child(4) {
-  animation-delay: 1.5s;
+  animation-delay: 600ms;
 }
 
 @keyframes decalage-entrees {
@@ -885,13 +894,13 @@ header img {
   animation: decalage-plat 200ms forwards;
 }
 .bloc-plats .bloc-entrance:nth-child(1) {
-  animation-delay: 2s;
+  animation-delay: 800ms;
 }
 .bloc-plats .bloc-entrance:nth-child(2) {
-  animation-delay: 2.5s;
+  animation-delay: 1000ms;
 }
 .bloc-plats .bloc-entrance:nth-child(3) {
-  animation-delay: 3s;
+  animation-delay: 1200ms;
 }
 
 @keyframes decalage-plat {
@@ -910,16 +919,16 @@ header img {
   animation: decalage-dessert 200ms forwards;
 }
 .bloc-desserts .bloc-entrance:nth-child(1) {
-  animation-delay: 3.5s;
+  animation-delay: 1400ms;
 }
 .bloc-desserts .bloc-entrance:nth-child(2) {
-  animation-delay: 4s;
+  animation-delay: 1600ms;
 }
 .bloc-desserts .bloc-entrance:nth-child(3) {
-  animation-delay: 4.5s;
+  animation-delay: 1800ms;
 }
 .bloc-desserts .bloc-entrance:nth-child(4) {
-  animation-delay: 4.5s;
+  animation-delay: 2000ms;
 }
 
 @keyframes decalage-dessert {

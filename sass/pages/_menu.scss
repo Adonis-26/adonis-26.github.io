@@ -26,7 +26,7 @@ header {
    @include center;
 
    .cards-menus {
-      height: 1414px;
+      height: 1339px;
 
       .section-btn-fr {
          display: flex;
@@ -109,8 +109,7 @@ header {
       .bloc-entrance {
          background: #ffffff;
          width: 651px;
-         padding-top: 10px;
-         padding-bottom:10px;
+         height: 72px;
           /* Animation déclenchée lorsque le checkbox est coché */
    input[type="checkbox"]:checked~.valid {
       animation: slid-left 0.5s forwards;
@@ -136,8 +135,6 @@ header {
 
       .accompagnement-entrance {
          width: 641px;
-         padding-top: 10px;
-        padding-bottom:10px;
       }
 
 
