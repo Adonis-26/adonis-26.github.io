@@ -371,7 +371,8 @@ input:checked~.empty-heart {
         font-weight: 600;
         line-height: 21.09px;
         margin-left: 10px;
-        padding-top: 15px;
+        padding-top: 10px;
+        padding-bottom:10px;
     }
 
     .accompagnement-entrance {
@@ -383,6 +384,8 @@ input:checked~.empty-heart {
         margin-left: 10px;
         font-family: 'Roboto';
         line-height: 17.63px;
+        padding-top: 10px;
+        padding-bottom:10px;
 
         span {
             white-space: nowrap; // ne pas aller à la ligne 
