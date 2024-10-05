@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Shrikhand" system-ui;
+  font-family: "Shrikhan";
   font-weight: 400;
   font-style: normal;
   font-style: italic;
   src: url("../assets/fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 @font-face {
-  font-family: "Roboto" system-ui;
+  font-family: "Roboto";
   font-weight: 100;
   font-weight: 200;
   font-weight: 300;
