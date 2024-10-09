@@ -13,6 +13,20 @@ header {
 
 .bloc-cards-menus {
    @include center;
+   .cards-menus{
+      .resto{
+         @include center; 
+      }
+   }
+   .bloc-entrees{
+         @include center;
+   }
+   .bloc-plats{
+      @include center;
+   }
+   .bloc-desserts{
+      @include center;
+}
 }
 
 
@@ -26,8 +40,19 @@ header {
    @include center;
 
    .cards-menus {
-      height: 1289px;
-
+      height: 1330px;
+      .resto{
+         @include center; 
+      }
+      .bloc-entrees{
+         @include center;
+   }
+   .bloc-plats{
+      @include center;
+   }
+   .bloc-desserts{
+      @include center;
+}
       .section-btn-fr {
          display: flex;
          justify-content: center;
@@ -68,19 +93,6 @@ header {
       position: relative;
    }
 
-   .affiche-restaurant {
-      .affiche {
-         box-sizing: content-box;
-         width: 100%;
-      }
-
-      img {
-         object-fit: cover;
-         width: 100%;
-         height: 480px;
-
-      }
-   }
 
    .bloc-cards-menus-a-la-francaise {
       @include center;
@@ -208,3 +220,4 @@ header {
       }
    }
 }
+

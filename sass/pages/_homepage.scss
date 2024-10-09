@@ -126,29 +126,30 @@ footer {
          display: flex;
          gap: 30px;
 
-         div {
-            height: 40px;
-         }
-
+      }
+      h2{
+         margin-left: 5xp;
       }
    }
 
    .bloc-restaurants {
       height: 730px;
+      width: 100%;
 
       .resto-card-food {
          display: flex;
          flex-direction: column;
+         @include center;
       }
 
       .rang-resto {
          display: flex;
-         gap: 80px;
+         gap: 60px;
          width: 100%;
 
          .card-food {
             height: 279px;
-            width: 500px;
+            width: 70%;
             margin-bottom: 40px;
 
             .img-and-food {
@@ -169,7 +170,7 @@ footer {
       display: flex;
       flex-direction: column;
       height: 100px;
-      margin: auto;
+      max-width: 100%;
 
       .align-left {
          display: flex;
@@ -178,7 +179,7 @@ footer {
          margin-top: 50px;
 
          .h3-footer {
-            margin: 0 50px 0 60px;
+            margin: 0 110px 0 60px;
             width: 44px;
             height: 4px;
 
