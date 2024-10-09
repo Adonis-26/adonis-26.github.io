@@ -247,16 +247,15 @@
     .resto {
         display: flex;
         padding-top: 10px;
-        margin-left: 10px;
 
         p {
-            width: 278px;
             font-family: 'Shrikhand';
             font-size: 28px;
             font-style: italic;
             font-weight: 400;
             line-height: 40.82px;
             margin-bottom: 0;
+            margin-right: 5px;
 
         }
 
@@ -313,7 +312,7 @@
 }
 
 .heart-page-menu i {
-    top: 35px;
+    top: 30px;
 }
 
 // Coeur vide par défaut
