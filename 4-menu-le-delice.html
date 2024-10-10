@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Document</title>
+    <title>Le délice des sens</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <a class="arrow" href="index.html">
             <img src="assets/icons/arrow-left-solid.svg" alt="arrow">
         </a>
         <h1>ohmyfood</h1>
@@ -24,10 +26,9 @@
 
     <div class="affiche-restaurant">
         <div class="affiche">
-            <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat poisson">
+            <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le delice">
         </div>
     </div>
-
     <div class="bloc-cards-menus">
         <div class="cards-menus">
             <div class="resto">
@@ -40,6 +41,7 @@
             </div>
             <!--bloc ENTREES-->
             <div class="bloc-entrees">
+
                 <div class="bloc">
                     <div class="bloc-details">
                         <p>ENTRÉES</p>
@@ -50,36 +52,40 @@
                             <input type="checkbox" id="entree1">
                             <label class="plat" for="entree1">
                                 <span class="plat-entrance">
-                                    Tartare de poulpe acidulé
+                                    Tartare de thon
                                 </span>
                                 <span class="accompagnement-entrance">
-                                    Aux zestes d'orange
+                                    <span class="elipse">
+                                        Assaisonné au yuzu
+                                    </span>
                                     <span class="price">
                                         25€
                                     </span>
                                 </span>
                             </label>
-
                             <div class="valid">
                                 <div class="coche">
                                     <i class="fa-regular fa-circle-check"></i>
                                 </div>
                             </div>
                         </div>
+
                         <div class="bloc-entrance">
                             <input type="checkbox" id="entree2">
                             <label class="plat" for="entree2">
                                 <span class="plat-entrance">
-                                    Velouté de légumes d'antan
+                                    Bouchée de homard croustillant 
                                 </span>
                                 <span class="accompagnement-entrance">
-                                    Carotte, panais, topinambour
+                                    <span class="elipse">
+                                        Et sa farandole de petits légumes
+                                    </span>
+
                                     <span class="price">
                                         35€
                                     </span>
                                 </span>
                             </label>
-
                             <div class="valid">
                                 <div class="coche">
                                     <i class="fa-regular fa-circle-check"></i>
@@ -90,16 +96,18 @@
                             <input type="checkbox" id="entree3">
                             <label class="plat" for="entree3">
                                 <span class="plat-entrance">
-                                    Soupe à l'oignon
+                                    Poulet rôti aux herbes de Provence 
                                 </span>
                                 <span class="accompagnement-entrance">
-                                    Revisitée
+                                    <span class="elipse">
+                                        Et sa crème de truffe
+                                    </span>
+
                                     <span class="price">
-                                        20€
+                                        40€
                                     </span>
                                 </span>
                             </label>
-
                             <div class="valid">
                                 <div class="coche">
                                     <i class="fa-regular fa-circle-check"></i>
@@ -109,10 +117,9 @@
                     </div>
                 </div>
 
-
             </div>
             <!-- bloc PLATS-->
-            <div class="bloc-plats">
+            <div class="bloc-plats bloc">
                 <div class="bloc">
                     <div class="bloc-details">
                         <p>PLATS</p>
@@ -123,16 +130,18 @@
                             <input type="checkbox" id="entree4">
                             <label class="plat" for="entree4">
                                 <span class="plat-entrance">
-                                    Coquilles Saint-Jacques
+                                    Poulet rôti aux herbes de Provence 
                                 </span>
                                 <span class="accompagnement-entrance">
-                                    Accompagnées d'une purée de panais
+                                    <span class="elipse">
+                                        Et sa crème de truffe
+                                    </span>
+
                                     <span class="price">
                                         40€
                                     </span>
                                 </span>
                             </label>
-
                             <div class="valid">
                                 <div class="coche">
                                     <i class="fa-regular fa-circle-check"></i>
@@ -143,10 +152,13 @@
                             <input type="checkbox" id="entree5">
                             <label class="plat" for="entree5">
                                 <span class="plat-entrance">
-                                    Magret de canard
+                                    Langouste rôtie 
                                 </span>
                                 <span class="accompagnement-entrance">
-                                    Et parmentier de pommes de terre
+                                    <span class="elipse">
+                                        Et ses légumes de saison
+                                    </span>
+
                                     <span class="price">
                                         35€
                                     </span>
@@ -163,16 +175,17 @@
                             <input type="checkbox" id="entree6">
                             <label class="plat" for="entree6">
                                 <span class="plat-entrance">
-                                    Pigeonneau d’Ille-et-Vilaine
+                                    Côte de bœuf Angus 
                                 </span>
                                 <span class="accompagnement-entrance">
-                                    Aux agrumes
+                                    <span class="elipse">
+                                        Et sa purée de panais
+                                    </span>
                                     <span class="price">
                                         44€
                                     </span>
                                 </span>
                             </label>
-
                             <div class="valid">
                                 <div class="coche">
                                     <i class="fa-regular fa-circle-check"></i>
@@ -181,11 +194,9 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <!--bloc DESSERTS-->
-            <div class="bloc-desserts">
+            <div class="bloc-desserts bloc">
                 <div class="bloc">
                     <div class="bloc-details">
                         <p>DESSERTS</p>
@@ -196,12 +207,13 @@
                             <input type="checkbox" id="entree7">
                             <label class="plat" for="entree7">
                                 <span class="plat-entrance">
-                                    Pétales de violettes glacés
+                                    Farandole de desserts
                                 </span>
                                 <span class="accompagnement-entrance">
                                     <span class="elipse">
-                                     Et purée de noisettes   
+                                        Du chef
                                     </span>
+
                                     <span class="price">
                                         18€
                                     </span>
@@ -218,18 +230,17 @@
                             <input type="checkbox" id="entree8">
                             <label class="plat" for="entree8">
                                 <span class="plat-entrance">
-                                    Fondant au chocolat
+                                    Crème brulée 
                                 </span>
                                 <span class="accompagnement-entrance">
                                     <span class="elipse">
-                                     Revisité   
+                                        Revisitée
                                     </span>
                                     <span class="price">
                                         22€
                                     </span>
                                 </span>
                             </label>
-
                             <div class="valid">
                                 <div class="coche">
                                     <i class="fa-regular fa-circle-check"></i>
@@ -240,19 +251,17 @@
                             <input type="checkbox" id="entree9">
                             <label class="plat" for="entree9">
                                 <span class="plat-entrance">
-                                    Millefeuille croustillant
+                                    Tiramisu 
                                 </span>
                                 <span class="accompagnement-entrance">
                                     <span class="elipse">
-                                      Myrtilles et pâte d’amande  
+                                        À la noisette
                                     </span>
-                                    
                                     <span class="price">
                                         23€
                                     </span>
                                 </span>
                             </label>
-
                             <div class="valid">
                                 <div class="coche">
                                     <i class="fa-regular fa-circle-check"></i>
@@ -264,7 +273,6 @@
 
 
             </div>
-
             <div class="section-btn">
                 <button class="btn">
                     Commander
@@ -272,7 +280,7 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer footer-menu">
         <section class="align-left">
             <h3 class="h3-footer">ohmyfood</h3>
             <div class="p-footer">
